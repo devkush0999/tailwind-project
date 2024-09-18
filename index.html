@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Project</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+
+  <body>
+    <!--     navbar     -->
+    <nav class="p-3 flex bg-white justify-between items-center">
+      <a href="#" id="brand" class="flex gap-2 items-center">
+        <img
+          src="https://placehold.co/440"
+          alt=""
+          class="object-cover max-w-12 max-h-12 rounded"
+        />
+        <span class="text-lg font-medium font-display">tailwind website</span>
+      </a>
+      <div id="nav-menu" class="hidden md:flex gap-12">
+        <a href="#" class="font-medium hover:text-primary"> Pricing</a>
+        <a href="#" class="font-medium hover:text-primary"> Docs</a>
+        <a href="#" class="font-medium hover:text-primary"> Changelog</a>
+        <a href="#" class="font-medium hover:text-primary"> Blogs</a>
+        <a href="#" class="font-medium hover:text-primary"> Login</a>
+      </div>
+      <button
+        id="nav-toggle"
+        class="hidden md:flex border items-center px-6 py-2 gap-2 rounded-lg hover:border-green-500"
+      >
+        <img src="https://placehold.co/15" alt="" />
+        <span>Electron Developers</span>
+        <span>-></span>
+      </button>
+      <button class="p-2 md:hidden" onclick="handleMenu()">=</button>
+      <div id="nav-dialog" class="fixed bg-white inset-0 p-3">
+        <div id="nav-bar" class="flex justify-between">
+         <a href="#" id="brand" class="flex gap-2 items-center">
+             <img src="https://placehold.co/440" alt="" class="object-cover max-w-12 max-h-12 rounded">
+             <span class="text-lg font-medium font-display">tailwind website</span>
+         </a>
+         <button class="p-2 md:hidden" onclick="handleMenu()">
+             X
+         </button>
+        </div>
+        <div class="grid">
+            <a href="#" class="font-medium m-3 p-3 hover:text-primary hover:bg-gray-50 rounded"> Pricing</a>
+            <a href="#" class="font-medium m-3 p-3 hover:text-primary hover:bg-gray-50 rounded"> Docs</a>
+            <a href="#" class="font-medium m-3 p-3 hover:text-primary hover:bg-gray-50 rounded"> Changelog</a>
+            <a href="#" class="font-medium m-3 p-3 hover:text-primary hover:bg-gray-50 rounded"> Blogs</a>
+            <a href="#" class="font-medium m-3 p-3 hover:text-primary hover:bg-gray-50 rounded"> Login</a>
+        </div>
+        <div class="h-[1px] bg-gray-500" 1px=""></div>
+        <button
+        id="nav-toggle"
+        class="flex font-medium m-3 p-3 gap-3 hover:text-primary hover:bg-gray-50 rounded"
+      >
+        <img src="https://placehold.co/15" alt="" />
+        <span>Electron Developers</span>
+        <span>-></span>
+      </button>
+    </div>
+     </div>
+    </nav>
+
+    <!--     hero     -->
+
+    <h1 class="fw-bols text-3xl text-blue-700 text-center">hiii</h1>
+    <script src="script.js"></script>
+  </body>
+</html>
