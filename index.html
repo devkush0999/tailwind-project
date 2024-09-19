@@ -9,7 +9,7 @@
 
   <body>
     <!--     navbar     -->
-    <nav class="p-3 flex bg-white justify-between items-center">
+    <nav class="p-3 flex justify-between items-center">
       <a href="#" id="brand" class="flex gap-2 items-center">
         <img
           src="https://placehold.co/440"
@@ -34,7 +34,7 @@
         <span>-></span>
       </button>
       <button class="p-2 md:hidden" onclick="handleMenu()">=</button>
-      <div id="nav-dialog" class="fixed bg-white inset-0 p-3">
+      <div id="nav-dialog" class="fixed z-10 md:hidden bg-white inset-0 p-3">
         <div id="nav-bar" class="flex justify-between">
          <a href="#" id="brand" class="flex gap-2 items-center">
              <img src="https://placehold.co/440" alt="" class="object-cover max-w-12 max-h-12 rounded">
@@ -64,7 +64,12 @@
      </div>
     </nav>
 
-    <!--     hero     -->
+    <!--     Main     -->
+         <main>
+          <!-- Hero -->
+           <div id="hero" class="min-h-screen bg-gradient-to-br from-purple-50 via-orange-50 to-transparent">
+           </div>
+         </main>
 
     <h1 class="fw-bols text-3xl text-blue-700 text-center">hiii</h1>
     <script src="script.js"></script>
